@@ -1,0 +1,24 @@
+.ff-category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+
+.ff-category-grid__btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 5px;
+  border: 1px solid var(--ff-panel-border);
+  border-radius: 3px;
+  cursor: default;
+  font-family: var(--ff-font);
+  font-size: var(--ff-font-size);
+  background: linear-gradient(180deg, var(--ff-inset-header-1), var(--ff-inset-header-2));
+  color: var(--ff-text);
+}
+
+.ff-category-grid__btn--active {
+  border-color: var(--ff-table-border-top);
+  background: linear-gradient(180deg, var(--ff-tab-active-2), #cfe4ab);
+}

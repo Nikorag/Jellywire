@@ -1,0 +1,10 @@
+.ff-star-rating {
+  letter-spacing: 1px;
+  color: #c99a06;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ff-star-rating--selected {
+  color: #ffe9a8;
+}

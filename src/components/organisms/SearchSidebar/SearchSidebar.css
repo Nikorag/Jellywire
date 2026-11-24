@@ -1,0 +1,13 @@
+.ff-search-sidebar {
+  width: 196px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: var(--ff-font-size);
+}
+
+.ff-search-sidebar__label {
+  font-weight: normal;
+  padding: 1px 0 2px 2px;
+}

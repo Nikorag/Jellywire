@@ -1,0 +1,58 @@
+.ff-server-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.ff-server-dialog {
+  width: 420px;
+  max-width: calc(100vw - 40px);
+  border: 1px solid var(--ff-window-border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  background: var(--ff-panel-bg);
+  font-size: var(--ff-font-size);
+  color: var(--ff-text);
+}
+
+.ff-server-dialog__body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.ff-server-dialog__form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--ff-panel-border);
+  background: var(--ff-inset-bg);
+  padding: 10px;
+}
+
+.ff-server-dialog__field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ff-server-dialog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ff-server-dialog__empty {
+  text-align: center;
+  color: var(--ff-text-muted);
+  padding: 12px 0;
+  margin: 0;
+}

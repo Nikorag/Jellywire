@@ -1,0 +1,13 @@
+.ff-xp-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--ff-font);
+  font-size: var(--ff-font-size);
+  color: var(--ff-text);
+  cursor: default;
+}
+
+.ff-xp-checkbox input {
+  margin: 0;
+}

@@ -1,0 +1,79 @@
+.ff-section-tabs {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  padding: 5px 8px 0 6px;
+  background: var(--ff-panel-bg);
+}
+
+.ff-section-tabs__tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px 5px 10px;
+  border: 1px solid var(--ff-panel-border);
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  cursor: default;
+  font-family: var(--ff-font);
+  font-size: var(--ff-font-size);
+  font-weight: normal;
+  color: var(--ff-tab-text-inactive);
+  background: linear-gradient(180deg, var(--ff-tab-inactive-1), var(--ff-tab-inactive-2));
+}
+
+.ff-section-tabs__tab--active {
+  font-weight: bold;
+  color: #000;
+  background: linear-gradient(180deg, var(--ff-tab-active-1), #f0eee4);
+}
+
+.ff-section-tabs__search-icon {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #4a6a8a;
+  border-radius: 50%;
+  position: relative;
+  flex: none;
+}
+
+.ff-section-tabs__search-icon::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  bottom: -3px;
+  width: 6px;
+  height: 2px;
+  background: #4a6a8a;
+  transform: rotate(45deg);
+}
+
+.ff-section-tabs__spacer {
+  flex: 1;
+}
+
+.ff-section-tabs__wordmark {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-bottom: 4px;
+}
+
+.ff-section-tabs__orb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.ff-section-tabs__wordmark-text {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #3c4a1d;
+}
+
+.ff-section-tabs__wordmark-accent {
+  color: var(--ff-wordmark-accent);
+}

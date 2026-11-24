@@ -1,0 +1,60 @@
+.ff-settings-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.ff-settings-dialog {
+  width: 440px;
+  max-width: calc(100vw - 40px);
+  border: 1px solid var(--ff-window-border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  background: var(--ff-panel-bg);
+  font-size: var(--ff-font-size);
+  color: var(--ff-text);
+}
+
+.ff-settings-dialog__body {
+  padding: 12px;
+}
+
+.ff-settings-dialog__section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--ff-panel-border);
+  background: var(--ff-inset-bg);
+  padding: 10px;
+}
+
+.ff-settings-dialog__label {
+  font-weight: bold;
+}
+
+.ff-settings-dialog__path {
+  padding: 4px 6px;
+  background: #fff;
+  border: 1px solid var(--ff-input-border);
+  border-top-color: var(--ff-input-border-top);
+  font-family: monospace;
+  font-size: 11px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.ff-settings-dialog__hint {
+  color: var(--ff-text-muted);
+  font-size: 11px;
+}
+
+.ff-settings-dialog__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}

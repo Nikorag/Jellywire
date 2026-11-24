@@ -1,0 +1,26 @@
+.ff-status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.ff-status-dot--green {
+  background: #3faa2f;
+  border: 1px solid #226d19;
+}
+
+.ff-status-dot--gray {
+  background: #9c9c8e;
+  border: 1px solid #6b6b5f;
+}
+
+.ff-status-dot--red {
+  background: #cf3b18;
+  border: 1px solid #7d1c09;
+}
+
+.ff-status-dot--pulse {
+  animation: ffpulse 2.4s infinite;
+}

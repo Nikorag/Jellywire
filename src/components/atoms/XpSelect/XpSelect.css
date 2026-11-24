@@ -1,0 +1,9 @@
+.ff-xp-select {
+  border: 1px solid var(--ff-input-border);
+  padding: 1px;
+  font-family: var(--ff-font);
+  font-size: var(--ff-font-size);
+  background: var(--ff-input-bg);
+  color: var(--ff-text);
+  min-width: 0;
+}

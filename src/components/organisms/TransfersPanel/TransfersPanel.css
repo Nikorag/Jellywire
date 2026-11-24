@@ -1,0 +1,54 @@
+.ff-transfers-panel {
+  padding: 0 6px 6px 6px;
+  font-size: var(--ff-font-size);
+}
+
+.ff-transfers-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px 3px 3px;
+}
+
+.ff-transfers-panel__title {
+  font-weight: bold;
+}
+
+.ff-transfers-panel__links {
+  display: flex;
+  gap: 12px;
+}
+
+.ff-transfers-panel__links a {
+  color: var(--ff-link);
+  text-decoration: underline;
+}
+
+.ff-transfers-panel__links a:hover {
+  color: var(--ff-link-hover);
+}
+
+.ff-transfers-panel__table {
+  border: 1px solid var(--ff-table-border);
+  border-top-color: var(--ff-table-border-top);
+  background: #fff;
+}
+
+.ff-transfers-panel__rows {
+  height: 104px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.ff-transfers-panel__empty {
+  padding: 20px 10px;
+  text-align: center;
+  color: var(--ff-text-muted);
+}
+
+.ff-transfers-panel__actions {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  padding: 8px 4px 4px 4px;
+}

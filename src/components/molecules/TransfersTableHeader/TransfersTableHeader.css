@@ -1,0 +1,17 @@
+.ff-transfers-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 92px 150px 118px 78px 62px;
+  background: var(--ff-panel-bg);
+  border-bottom: 1px solid var(--ff-panel-border);
+  font-size: var(--ff-font-size);
+}
+
+.ff-transfers-header__cell {
+  padding: 3px 5px;
+  border-right: 1px solid var(--ff-panel-divider);
+  box-shadow: inset 1px 1px 0 #fff;
+}
+
+.ff-transfers-header__cell--last {
+  border-right: none;
+}

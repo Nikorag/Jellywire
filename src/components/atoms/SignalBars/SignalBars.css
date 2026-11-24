@@ -1,0 +1,10 @@
+.ff-signal-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 11px;
+}
+
+.ff-signal-bars__bar {
+  width: 3px;
+}

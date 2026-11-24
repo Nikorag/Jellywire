@@ -1,0 +1,19 @@
+.ff-menu-bar {
+  display: flex;
+  align-items: center;
+  height: 21px;
+  padding: 0 2px;
+  background: var(--ff-panel-bg);
+  border-bottom: 1px solid var(--ff-panel-divider);
+  font-size: var(--ff-font-size);
+}
+
+.ff-menu-bar__item {
+  padding: 3px 7px;
+  cursor: default;
+}
+
+.ff-menu-bar__item:hover {
+  background: #316ac5;
+  color: #fff;
+}

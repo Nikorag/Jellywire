@@ -1,0 +1,85 @@
+.ff-icon-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: default;
+  font-family: var(--ff-font);
+  font-size: var(--ff-font-size);
+  color: #2a2a24;
+  padding: 2px 6px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: none;
+}
+
+.ff-icon-action:hover:not(:disabled) {
+  border-color: var(--ff-panel-border);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.ff-icon-action:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.ff-icon-action__glyph {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ff-icon-action__glyph img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.ff-icon-action__glyph--circle {
+  border-radius: 50%;
+}
+
+.ff-icon-action__glyph--rounded {
+  border-radius: 3px;
+}
+
+.ff-icon-action__glyph--folder {
+  width: 24px;
+  height: 20px;
+  margin: 2px 0;
+  border-radius: 2px;
+}
+
+.ff-icon-action__glyph--green {
+  background: radial-gradient(circle at 35% 28%, #b6e36a, #4f7d0b);
+  border: 1px solid #37570a;
+}
+
+.ff-icon-action__glyph--amber {
+  background: linear-gradient(180deg, #ffd979, #dd9f13);
+  border: 1px solid #8f6404;
+  color: #5a3f02;
+}
+
+.ff-icon-action__glyph--red {
+  background: radial-gradient(circle at 35% 28%, #f08a72, #b52a10);
+  border: 1px solid #7d1c09;
+}
+
+.ff-icon-action__glyph--blue {
+  background: radial-gradient(circle at 35% 28%, #8fc4f2, #1d5fa8);
+  border: 1px solid #143f70;
+}
+
+.ff-icon-action__glyph--gray {
+  background: linear-gradient(180deg, #d9d6c8, #a8a493);
+  border: 1px solid #7a7768;
+  color: #4a473c;
+}

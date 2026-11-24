@@ -1,0 +1,98 @@
+:root {
+  /* window chrome (Windows XP "Luna" blue) */
+  --ff-titlebar-1: #0f8bf4;
+  --ff-titlebar-2: #0a62e0;
+  --ff-titlebar-3: #0a5ddc;
+  --ff-titlebar-4: #1a6ee6;
+  --ff-titlebar-5: #3b8ef0;
+  --ff-window-border: #0a246a;
+
+  /* panel chrome (olive/tan) */
+  --ff-panel-bg: #ece9d8;
+  --ff-panel-border: #aca899;
+  --ff-panel-divider: #d6d2c2;
+  --ff-inset-bg: #f6f4ec;
+  --ff-inset-header-1: #f7f5ee;
+  --ff-inset-header-2: #e3dfcd;
+  --ff-inset-border: #cdc8b4;
+  --ff-tab-active-1: #fbfaf4;
+  --ff-tab-active-2: #e9f3d8;
+  --ff-tab-inactive-1: #e6e2d2;
+  --ff-tab-inactive-2: #d6d1be;
+  --ff-tab-text-inactive: #57534a;
+
+  /* accents */
+  --ff-green: #6f9c15;
+  --ff-green-dark: #3f5d09;
+  --ff-green-light: #cdee7d;
+  --ff-blue: #2f6fb5;
+  --ff-blue-dark: #1d4577;
+  --ff-purple: #8a4fb5;
+  --ff-purple-dark: #543073;
+  --ff-amber: #c58a1d;
+  --ff-amber-dark: #7d5709;
+  --ff-red: #b5473f;
+  --ff-red-dark: #732b25;
+  --ff-gray-swatch: #8e8e8e;
+  --ff-gray-swatch-dark: #5b5b5b;
+
+  /* wordmark only — the rest of the app's accent stays lime green above */
+  --ff-wordmark-accent: #8b3fd1;
+
+  /* input chrome */
+  --ff-input-border: #7f9db9;
+  --ff-input-border-top: #404d59;
+  --ff-input-bg: #ffffff;
+  --ff-table-border: #7f9db9;
+  --ff-table-border-top: #5a7893;
+  --ff-row-alt: #f2f9e8;
+  --ff-row-selected: #316ac5;
+
+  /* status bar */
+  --ff-statusbar-1: #f3f1e7;
+  --ff-statusbar-2: #e2ded0;
+  --ff-down-color: #1f5a12;
+  --ff-up-color: #7a3a30;
+
+  --ff-text: #000000;
+  --ff-text-muted: #4a4a42;
+  --ff-link: #0b3d91;
+  --ff-link-hover: #1f5fd0;
+  --ff-danger: #cf3b18;
+
+  --ff-font: Tahoma, Verdana, "Segoe UI", sans-serif;
+  --ff-font-size: 11px;
+}
+
+@keyframes ffpulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+html {
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Pins the app to the viewport with no scrollable document so macOS's
+   WKWebView elastic overscroll ("bounce") never has anything to engage. */
+body {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: transparent;
+  font-family: var(--ff-font);
+  -webkit-font-smoothing: none;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,16 @@
+.ff-xp-input {
+  border: 1px solid var(--ff-input-border);
+  border-top-color: var(--ff-input-border-top);
+  padding: 2px 3px;
+  font-family: var(--ff-font);
+  font-size: var(--ff-font-size);
+  background: var(--ff-input-bg);
+  color: var(--ff-text);
+  outline: none;
+  min-width: 0;
+}
+
+.ff-xp-input:focus {
+  outline: 1px dotted #7f9db9;
+  outline-offset: -2px;
+}

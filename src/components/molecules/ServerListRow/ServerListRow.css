@@ -1,0 +1,33 @@
+.ff-server-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border: 1px solid var(--ff-panel-border);
+  background: #fff;
+  font-size: var(--ff-font-size);
+}
+
+.ff-server-row__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ff-server-row__name {
+  font-weight: bold;
+}
+
+.ff-server-row__host {
+  color: var(--ff-text-muted);
+  font-family: monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ff-server-row__error {
+  color: var(--ff-danger);
+}

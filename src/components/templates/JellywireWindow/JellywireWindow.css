@@ -1,0 +1,22 @@
+.ff-window {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: var(--ff-panel-bg);
+  overflow: hidden;
+  border-radius: 8px;
+  font-size: var(--ff-font-size);
+  color: var(--ff-text);
+}
+
+.ff-window__body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 0;
+  padding: 4px 6px 0 6px;
+  background: var(--ff-panel-bg);
+  align-items: stretch;
+}

@@ -1,0 +1,49 @@
+.ff-results-row {
+  display: grid;
+  grid-template-columns: 84px 44px minmax(0, 1fr) 58px 92px 78px 22px;
+  cursor: default;
+  font-size: var(--ff-font-size);
+  background: #fff;
+  color: var(--ff-text);
+}
+
+.ff-results-row:nth-child(even) {
+  background: var(--ff-row-alt);
+}
+
+.ff-results-row--selected {
+  background: var(--ff-row-selected) !important;
+  color: #fff;
+}
+
+.ff-results-row--selected .ff-results-row__mark {
+  color: #fff;
+}
+
+.ff-results-row__cell {
+  padding: 2px 5px;
+  overflow: hidden;
+}
+
+.ff-results-row__cell--right {
+  text-align: right;
+}
+
+.ff-results-row__cell--name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+
+.ff-results-row__cell--mark {
+  text-align: center;
+  color: var(--ff-blue);
+  font-weight: bold;
+}
+
+.ff-results-row__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

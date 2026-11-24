@@ -1,0 +1,26 @@
+.ff-query-form {
+  border: 1px solid var(--ff-panel-border);
+  background: var(--ff-inset-bg);
+  margin-top: 2px;
+  font-size: var(--ff-font-size);
+}
+
+.ff-query-form__header {
+  background: linear-gradient(180deg, var(--ff-inset-header-1), var(--ff-inset-header-2));
+  border-bottom: 1px solid var(--ff-inset-border);
+  padding: 3px 6px;
+  font-weight: bold;
+}
+
+.ff-query-form__body {
+  padding: 7px 8px 9px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ff-query-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

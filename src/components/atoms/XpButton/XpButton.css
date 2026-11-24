@@ -1,0 +1,24 @@
+.ff-xp-button {
+  align-self: flex-start;
+  padding: 3px 16px;
+  border: 1px solid var(--ff-input-border);
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fdfdfa, #dedacb);
+  cursor: default;
+  font-family: var(--ff-font);
+  font-size: var(--ff-font-size);
+  color: var(--ff-text);
+}
+
+.ff-xp-button:hover:not(:disabled) {
+  background: linear-gradient(180deg, #ffffff, #eae6d6);
+}
+
+.ff-xp-button:active:not(:disabled) {
+  background: linear-gradient(180deg, #cfcbbc, #e6e2d2);
+}
+
+.ff-xp-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

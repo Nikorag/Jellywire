@@ -1,0 +1,26 @@
+.ff-results-header {
+  display: grid;
+  grid-template-columns: 84px 44px minmax(0, 1fr) 58px 92px 78px 22px;
+  background: var(--ff-panel-bg);
+  border-bottom: 1px solid var(--ff-panel-border);
+  font-size: var(--ff-font-size);
+}
+
+.ff-results-header__cell {
+  padding: 3px 5px;
+  border-right: 1px solid var(--ff-panel-divider);
+  box-shadow: inset 1px 1px 0 #fff;
+  cursor: default;
+}
+
+.ff-results-header__cell:hover {
+  background: #f4f2e8;
+}
+
+.ff-results-header__cell--mark {
+  cursor: default;
+}
+
+.ff-results-header__cell--mark:hover {
+  background: none;
+}

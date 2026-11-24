@@ -1,0 +1,57 @@
+.ff-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 22px;
+  padding: 0 6px;
+  background: linear-gradient(180deg, var(--ff-statusbar-1), var(--ff-statusbar-2));
+  border-top: 1px solid #fff;
+  box-shadow: inset 0 1px 0 #fff;
+  font-size: var(--ff-font-size);
+  color: var(--ff-text);
+}
+
+.ff-status-bar__divider {
+  width: 1px;
+  height: 14px;
+  background: #c9c5b4;
+}
+
+.ff-status-bar__down {
+  color: var(--ff-down-color);
+}
+
+.ff-status-bar__up {
+  color: var(--ff-up-color);
+}
+
+.ff-status-bar__message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ff-status-bar__fill {
+  flex: 1;
+}
+
+.ff-status-bar__player {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 1px 6px;
+  border: 1px solid var(--ff-inset-border);
+  background: var(--ff-inset-bg);
+  color: var(--ff-text-muted);
+  flex: none;
+}
+
+.ff-status-bar__player-controls {
+  letter-spacing: 2px;
+}
+
+.ff-status-bar__player--disabled {
+  opacity: 0.45;
+  filter: grayscale(1);
+  cursor: default;
+}

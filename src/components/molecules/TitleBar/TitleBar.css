@@ -1,0 +1,111 @@
+.ff-title-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 4px 0 6px;
+  background: linear-gradient(
+    180deg,
+    var(--ff-titlebar-1) 0%,
+    var(--ff-titlebar-2) 9%,
+    var(--ff-titlebar-3) 45%,
+    var(--ff-titlebar-4) 85%,
+    var(--ff-titlebar-5) 100%
+  );
+  color: #fff;
+}
+
+.ff-title-bar__icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.ff-title-bar__text {
+  font-weight: bold;
+  font-size: 11px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ff-title-bar__spacer {
+  flex: 1;
+}
+
+.ff-title-bar__controls {
+  display: flex;
+  gap: 2px;
+}
+
+.ff-title-bar__btn {
+  width: 21px;
+  height: 20px;
+  border: 1px solid #1d4f9c;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #61a9ee, #1a68d8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  padding: 0;
+}
+
+.ff-title-bar__btn:hover {
+  background: linear-gradient(180deg, #8cc4f6, #2f7ce4);
+}
+
+.ff-title-bar__btn--min {
+  align-items: flex-end;
+  padding-bottom: 4px;
+}
+
+.ff-title-bar__btn-glyph--min {
+  width: 9px;
+  height: 2px;
+  background: #fff;
+}
+
+.ff-title-bar__btn-glyph--max {
+  width: 9px;
+  height: 8px;
+  border: 1px solid #fff;
+  border-top-width: 3px;
+}
+
+.ff-title-bar__btn--close {
+  border-color: #9c2a14;
+  background: linear-gradient(180deg, #f08a6a, #cf3b18);
+}
+
+.ff-title-bar__btn--close:hover {
+  background: linear-gradient(180deg, #f7a98e, #e4542c);
+}
+
+.ff-title-bar__btn-glyph--close {
+  position: relative;
+  width: 9px;
+  height: 9px;
+}
+
+.ff-title-bar__btn-glyph--close::before,
+.ff-title-bar__btn-glyph--close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 2px;
+  background: #fff;
+}
+
+.ff-title-bar__btn-glyph--close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ff-title-bar__btn-glyph--close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

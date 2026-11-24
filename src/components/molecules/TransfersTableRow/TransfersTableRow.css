@@ -1,0 +1,43 @@
+.ff-transfers-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 92px 150px 118px 78px 62px;
+  font-size: var(--ff-font-size);
+  align-items: center;
+  background: #fff;
+}
+
+.ff-transfers-row--alt {
+  background: var(--ff-row-alt);
+}
+
+.ff-transfers-row__cell {
+  padding: 2px 5px;
+  overflow: hidden;
+}
+
+.ff-transfers-row__cell--name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+
+.ff-transfers-row__cell--right {
+  text-align: right;
+}
+
+.ff-transfers-row__cell--status {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ff-transfers-row__cell--progress {
+  padding: 3px 5px;
+}
+
+.ff-transfers-row__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
